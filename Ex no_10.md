@@ -1,36 +1,45 @@
-# EX 5 C program to calculate the total marks, average, and percentage of marks obtained in seven subjects.
+# EX 10 C program to find the factorial of a given number using a function with arguments and return type.
 ## DATE:
-## AIM:
-To write a C program to calculate the total marks, average, and percentage of marks obtained in seven subjects.
+## Aim:
+To write a C program to find the factorial of a given number using a function with arguments and return type.
 
-## Algorithm
-1. Start. 
-2. Declare three variable value of type int for marks. 
-3. Prompt the user to enter a value. 
-4. Read the value using scanf. 
-5. Find total and average. 
-6. Print the result 
-7. End.    
+## Algorithm:
+1. Start  
+2. Declare function `factorial(int n)`  
+3. Initialize `fact = 1`  
+4. Loop from `i = 1` to `n`  
+5. Multiply `fact = fact * i`  
+6. Return `fact`  
+7. In `main()`, declare `num`  
+8. Read `num` from user  
+9. Call `factorial(num)` and store in `result`  
+10. Print `result`  
+11. End 
 
 ## Program:
 ```
-#include <stdio.h> 
-int main() { 
-    int sub1, sub2, sub3, total; 
-    float average; 
-    scanf("%d %d %d", &sub1,&sub2,&sub3); 
-    total = sub1 + sub2 + sub3; 
-    average = total / 3.0; 
-    printf("\nTotal : %d\n", total); 
-    printf("Average : %.2f\n", average); 
-    return 0; 
-} 
+#include <stdio.h>
+int factorial(int n)
+{
+    int fact = 1;
+    for (int i = 1; i <= n; ++i)
+    {
+        fact *= i;
+    }
+    return fact;
+}
+int main()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    int result = factorial(num);
+    printf("Factorial of %d is %d\n", num, result);
+    return 0;
+}
 ```
-
 ## Output:
-
-![image](https://github.com/user-attachments/assets/ef557452-87c6-4a46-8235-b0ec5919d0d5)
-
+![Screenshot 2025-05-06 191334](https://github.com/user-attachments/assets/9f7cc8d2-6f98-4b02-b1b5-177c0a69fa1c)
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
