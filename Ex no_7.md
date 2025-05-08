@@ -1,4 +1,5 @@
 # EX 7 C Program to Print a right triangle star Pattern
+## DATE:
 ## AIM:
 To write a C Program to Print a right triangle star Pattern
 
